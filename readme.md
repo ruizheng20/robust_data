@@ -1,7 +1,10 @@
 ## Codes for "Characterizing the Impacts of Instances on Robustness"
-###Basic Infomation
+### Basic Infomation
 - paper: https://aclanthology.org/2023.findings-acl.146.pdf
 - Authors: Rui Zheng*, Zhiheng Xi*, Qin Liu, Wenbin Lai, Tao Gui, Qi Zhang, Xuanjing Huang, Jin Ma, Ying Shan, Weifeng Ge.
+- Abstract: Building robust deep neural networks (DNNs) against adversarial attacks is an important but challenging task. Previous defense approaches mainly focus on developing new model structures or training algorithms, but they do little to tap the potential of training instances, especially instances with robust patterns carring innate robustness. In this paper, we show that robust and non-robust instances in the training dataset, though are both important for test performance, have contrary impacts on robustness, which makes it possible to build a highly robust model by leveraging the training dataset in a more effective way. We propose a new method that can distinguish robust instances from nonrobust ones according to the model’s sensitivity to perturbations on individual instances during training. Surprisingly, we find that the model under standard training easily overfits the robust instances by relying on their simple patterns before the model completely learns their robust features. Finally, we propose a new mitigation algorithm to further release the potential of robust instances. Experimental results show that proper use of robust instances in the original dataset is a new line to achieve highly robust models. Our codes are publicly available at https://github.com/ruizheng20/robust_data.
+  
+  
 ### Usage
 - Collect robust statistics of training dataset
 ```shell script
